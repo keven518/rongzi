@@ -6,29 +6,73 @@
         <img src="../assets/1.png" alt="">重庆
       </p>
     </div>
+    <div class="kv">柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
+    <div>柯文</div>
   </div>
 </template>
 
 <script>
 import { Indicator } from "mint-ui"
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import axios from 'axios'
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  },
+  components: {},
   methods: {
     
   },
   created() {
-    // Indicator.open('cmm');
+    axios.get('https://www.easy-mock.com/mock/5b8fab1d06b4621da8247b00/example/singer_list').then(res => {
+      console.log('res: ', res)
+    })
   }
 }
 </script>
 
 <style lang="scss">
+.kv{
+  font-size: px2rem(16);
+}
 .home {
   .top{
     position: relative;
